@@ -10,7 +10,7 @@
         font-size: 13px;
         line-height: 1.57143;
         color: #322828;
-        background-color: #b3d7ec;
+        background-color: #d9eeef;
         margin: 0;
         padding: 0;
       }
@@ -30,21 +30,47 @@
       }
       .container h1 {
         color: #01a2a6;
-        font-size: 18px;
+        font-size: 24px;
         text-align: center;
         margin: 0;
       }
       .content {
 
         padding:98px 10px 10px 10px;
-        
-        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         
       }
       .content img {
         border-radius: 0.2em;
-        max-width: 90%;
-        height: auto;
+        max-width: 97%;
+
+        height: 45em;
+      }
+      img {
+        flex-basis: 40%;
+      }
+      .gridd {
+        font-size: 18px;
+        padding-left: 160px;
+        padding-top: 13.555em;
+      }
+      #blinkingText {
+        font-size: 25px;
+        font-weight: bold;
+        color: #2f8a12;
+        transition: 1.5s;
+        opacity: 0;
+        animation: opacityAnimation 2s infinite alternate;
+      }
+      @keyframes opacityAnimation {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 2;
+        }
       }
       footer {
         background-color: #01a2a6;
@@ -63,10 +89,20 @@
       <h1>E-Bus Pass</h1>
     </div>
     <div class="content">
+      
       <img
         src="Screenshot 2024-02-21 214345.png"
-        alt="pass"
+        alt="pass" style="position: relative;"
       />
+           <grid class="gridd" style="position: absolute;"> <div id="blinkingText">7504102316894</div></grid>
+      </div>
+          <footer>
+            <h4>Copyright &copy; Delhi e-Governance Society 2024</h4>
+          </footer>
+          </body>
+        </html>
+      </html>
+      
     </div>
     <footer>
       <h4>Copyright &copy; Delhi e-Governance Society 2024</h4>
