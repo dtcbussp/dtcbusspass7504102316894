@@ -13,6 +13,7 @@
         background-color: #d9eeef;
         margin: 0;
         padding: 0;
+        height: max-content;
       }
       h1 {
         font-size: 25px;
@@ -35,34 +36,34 @@
         margin: 0;
       }
       .content {
-
-        padding:98px 10px 10px 10px;
+        padding: 100px 10px 10px 10px;
         display: flex;
         justify-content: center;
         align-items: center;
-        
       }
       .content img {
         border-radius: 0.2em;
-        max-width: 97%;
-
+        max-width: 98%;
         height: 45em;
+      }
+      .image-container {
+        max-height: 42em;
       }
       img {
         flex-basis: 40%;
       }
       .gridd {
         font-size: 18px;
-        padding-left: 160px;
-        padding-top: 13.555em;
+        padding-left: px;
+        padding-top: 17.555em;
       }
       #blinkingText {
         font-size: 25px;
         font-weight: bold;
-        color: #2f8a12;
+        color: #30721c;
         transition: 1.5s;
         opacity: 0;
-        animation: opacityAnimation 2s infinite alternate;
+        animation: opacityAnimation 1.5s infinite alternate;
       }
       @keyframes opacityAnimation {
         0% {
@@ -74,7 +75,7 @@
       }
       footer {
         background-color: #01a2a6;
-        padding: 20px;
+        padding: 10px;
         color: #fff;
         text-align: center;
         position: fixed;
@@ -89,24 +90,19 @@
       <h1>E-Bus Pass</h1>
     </div>
     <div class="content">
-      
-      <img
-        src="Screenshot 2024-02-21 214345.png"
-        alt="pass" style="position: relative;"
-      />
-           <grid class="gridd" style="position: absolute;"> <div id="blinkingText">7504102316894</div></grid>
+      <div class="image-container">
+        <img
+          src="Screenshot 2024-02-21 214345.png"
+          alt="pass"
+          style="position: relative"
+        />
       </div>
-          <footer>
-            <h4>Copyright &copy; Delhi e-Governance Society 2024</h4>
-          </footer>
-          </body>
-        </html>
-      </html>
-      
+      <grid class="gridd" style="position: absolute">
+        <div id="blinkingText">7504102316894</div>
+      </grid>
     </div>
     <footer>
       <h4>Copyright &copy; Delhi e-Governance Society 2024</h4>
     </footer>
-    </body>
-  </html>
+  </body>
 </html>
